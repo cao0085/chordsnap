@@ -7717,10 +7717,33 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Font-size: 16px = 1em */
     /* 1.5 倍於 .chord 的字體大小 */
 }
 
+/* romanNumera */
+.chord-largest-text-number {
+    font-size: 1.45em;
+    font-family: 'Times New Roman', serif;
+    /* 1.5 倍於 .chord 的字體大小 */
+}
+
+.chord-larger-text-top {
+    font-size: 1em;
+    /* 縮小升降記號 */
+    line-height: 1;
+    /* 行高設置為 1，避免偏移 */
+    vertical-align: top;
+    /* 對齊到容器頂部 */
+    display: inline-block;
+    /* 明確設置 inline-block 以便對齊 */
+    position: relative;
+    top: -0.2em;
+    /* 根據實際效果微調 */
+}
+
+
 .chord-larger-text {
     font-size: 1em;
     /* 1.2 倍於 .chord 的字體大小 */
 }
+
 
 .chord-smallest-text {
     font-size: 0.8em;
@@ -7767,7 +7790,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `/* Font-size: 16px = 1em */
     transition: all 0.3s ease;
     font-weight: bold;
     /* 可以設置字體加粗讓按鈕更顯眼 */
-}`, "",{"version":3,"sources":["webpack://./src/styles/content.css"],"names":[],"mappings":"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","sourcesContent":["/* Font-size: 16px = 1em */\n.sheet-page-container {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    margin: 0 auto;\n    width: 100%;\n}\n\n\n/* Music Info 區域 */\n.musicInfo-block {\n    display: grid;\n    grid-template-rows: repeat(6, 1fr);\n    /* 設定4行，平均分配高度 */\n    grid-template-columns: repeat(30, 1fr);\n    /* 設定10列，平均分配寬度 */\n    /* 設定網格之間的間距 */\n    width: 100%;\n    /* 設置容器寬度 */\n    height: 75px;\n    /* 可調整的容器高度 */\n    margin-bottom: 20px;\n}\n\n.musicInfo-item {\n    outline: none;\n    align-items: flex-end;\n    position: relative;\n}\n\n/* left item */\n.musicInfo-item:nth-child(1) {\n    font-family: \"Verdana\";\n    grid-column: 2 / span 8;\n    grid-row: 1 / span 4;\n    font-size: 1.2em;\n    align-items: center;\n}\n\n/* center item (title)*/\n.musicInfo-item:nth-child(2) {\n    grid-column: 8 / span 16;\n    grid-row: 1 / span 5;\n    font-size: 2.5em;\n\n    display: flex;\n    align-items: center;\n    /* 垂直置中 */\n    justify-content: center;\n    /* 水平置中 */\n    text-align: center;\n    /* 文字水平置中 */\n    white-space: nowrap;\n    /* 禁止換行 */\n    overflow: hidden;\n    /* 隱藏超出範圍的文字 */\n    text-overflow: ellipsis;\n    /* 超出範圍的文字顯示省略號 */\n}\n\n/* right item */\n.musicInfo-item:nth-child(3) {\n    font-family: \"Verdana\";\n    grid-column: 25 / span 6;\n    grid-row: 4 / span 2;\n    font-size: 1.2em;\n    /* text-align: center; */\n}\n\n/* 提示字元設定 */\n.musicInfo-item::before {\n    content: attr(data-placeholder);\n    /* 使用 data-placeholder 作為提示文字 */\n    color: #aaa;\n    /* 設置提示文字的顏色 */\n    position: absolute;\n    /* 絕對定位，使其顯示在容器內 */\n    top: 50%;\n    /* 垂直居中 */\n    left: 50%;\n    /* 水平居中 */\n    transform: translate(-50%, -50%);\n    /* 調整位置，使文字完全居中 */\n    pointer-events: none;\n    /* 防止提示文字影響用戶操作 */\n    white-space: nowrap;\n    /* 禁止提示文字換行 */\n}\n\n.musicInfo-item:empty::before {\n    display: block;\n}\n\n.musicInfo-item:not(:empty)::before {\n    display: none;\n}\n\n\n/*  there height value .... */\n.sheet-block {\n    display: flex;\n    flex-direction: column;\n    color: #333333;\n    /* 垂直排列 */\n    width: 89%;\n    /* 根據需求調整父容器寬度 */\n    box-sizing: border-box;\n    padding: 0;\n    margin: 0;\n}\n\n.lable-container {\n    display: flex;\n    justify-content: space-between;\n    box-sizing: border-box;\n    width: 100%;\n    height: 5px;\n}\n\n.section-label {\n    display: flex;\n    flex: 1;\n    align-items: flex-end;\n    outline: none;\n    text-align: left;\n    padding-top: 10px;\n    margin-left: -40px;\n    position: relative;\n    transform: translateY(50%);\n    color: rgba(0, 0, 0, 0.95);\n    font-family: \"Verdana\";\n    font-weight: 600;\n    font-style: italic;\n    text-shadow: 2px 1px 2px #f19dae, -1px -2px 2px #f19dae, 1px -1px 2px #f19dae, -1px 2px 2px #f19dae;\n}\n\n.section-label-largest-text {\n    font-size: 1.45em;\n    margin-left: 5px;\n}\n\n.section-label-smallest-text {\n    font-size: 1.13em;\n}\n\n.chord-container {\n    display: flex;\n    width: 100%;\n    box-sizing: border-box;\n    flex-wrap: nowrap;\n    min-height: 38px;\n    /* 最小高度 */\n    max-height: 45px;\n    /* 最大高度 */\n    height: 45px;\n    padding: 0;\n    margin: 0;\n}\n\n/* Chord */\n.chord-container>.chord {\n    line-height: 1;\n    padding-bottom: 5px;\n    display: flex;\n    align-items: flex-end;\n    font-size: clamp(1.4em, 1.6em, 1.6em);\n    flex: 1;\n\n    min-width: 0;\n    border: none;\n    outline: none;\n    box-sizing: border-box;\n    /* 超出左邊界一點 */\n    margin-left: -10px;\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n}\n\n/* Chord Word */\n.chord-largest-text {\n    font-size: 1.45em;\n    /* 1.5 倍於 .chord 的字體大小 */\n}\n\n.chord-larger-text {\n    font-size: 1em;\n    /* 1.2 倍於 .chord 的字體大小 */\n}\n\n.chord-smallest-text {\n    font-size: 0.8em;\n    /* 0.9 倍於 .chord 的字體大小 */\n}\n\n/* Line Setting */\n.line-container {\n    display: flex;\n    justify-content: space-between;\n    width: 100%;\n    box-sizing: border-box;\n    margin-bottom: 10px;\n    height: 50px;\n    min-height: 40px;\n    max-height: 50px;\n}\n\n.vertical-line {\n    min-width: 0;\n    width: 2px;\n    height: 100%;\n    background-color: rgb(29, 29, 29);\n}\n\n/* Page Number */\n.page-navigation {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 10px;\n    gap: 4px;\n}\n\n.prev-button,\n.next-button {\n    background-color: transparent;\n    /* 背景設置為透明 */\n    /* 文字顏色設置為藍色（可以根據需要更改） */\n    border: 2px solid transparent;\n    /* 邊框設置為透明 */\n    border-radius: 5px;\n    cursor: pointer;\n    transition: all 0.3s ease;\n    font-weight: bold;\n    /* 可以設置字體加粗讓按鈕更顯眼 */\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/styles/content.css"],"names":[],"mappings":"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","sourcesContent":["/* Font-size: 16px = 1em */\n.sheet-page-container {\n    display: flex;\n    flex-direction: column;\n    justify-content: center;\n    align-items: center;\n    margin: 0 auto;\n    width: 100%;\n}\n\n\n/* Music Info 區域 */\n.musicInfo-block {\n    display: grid;\n    grid-template-rows: repeat(6, 1fr);\n    /* 設定4行，平均分配高度 */\n    grid-template-columns: repeat(30, 1fr);\n    /* 設定10列，平均分配寬度 */\n    /* 設定網格之間的間距 */\n    width: 100%;\n    /* 設置容器寬度 */\n    height: 75px;\n    /* 可調整的容器高度 */\n    margin-bottom: 20px;\n}\n\n.musicInfo-item {\n    outline: none;\n    align-items: flex-end;\n    position: relative;\n}\n\n/* left item */\n.musicInfo-item:nth-child(1) {\n    font-family: \"Verdana\";\n    grid-column: 2 / span 8;\n    grid-row: 1 / span 4;\n    font-size: 1.2em;\n    align-items: center;\n}\n\n/* center item (title)*/\n.musicInfo-item:nth-child(2) {\n    grid-column: 8 / span 16;\n    grid-row: 1 / span 5;\n    font-size: 2.5em;\n\n    display: flex;\n    align-items: center;\n    /* 垂直置中 */\n    justify-content: center;\n    /* 水平置中 */\n    text-align: center;\n    /* 文字水平置中 */\n    white-space: nowrap;\n    /* 禁止換行 */\n    overflow: hidden;\n    /* 隱藏超出範圍的文字 */\n    text-overflow: ellipsis;\n    /* 超出範圍的文字顯示省略號 */\n}\n\n/* right item */\n.musicInfo-item:nth-child(3) {\n    font-family: \"Verdana\";\n    grid-column: 25 / span 6;\n    grid-row: 4 / span 2;\n    font-size: 1.2em;\n    /* text-align: center; */\n}\n\n/* 提示字元設定 */\n.musicInfo-item::before {\n    content: attr(data-placeholder);\n    /* 使用 data-placeholder 作為提示文字 */\n    color: #aaa;\n    /* 設置提示文字的顏色 */\n    position: absolute;\n    /* 絕對定位，使其顯示在容器內 */\n    top: 50%;\n    /* 垂直居中 */\n    left: 50%;\n    /* 水平居中 */\n    transform: translate(-50%, -50%);\n    /* 調整位置，使文字完全居中 */\n    pointer-events: none;\n    /* 防止提示文字影響用戶操作 */\n    white-space: nowrap;\n    /* 禁止提示文字換行 */\n}\n\n.musicInfo-item:empty::before {\n    display: block;\n}\n\n.musicInfo-item:not(:empty)::before {\n    display: none;\n}\n\n\n/*  there height value .... */\n.sheet-block {\n    display: flex;\n    flex-direction: column;\n    color: #333333;\n    /* 垂直排列 */\n    width: 89%;\n    /* 根據需求調整父容器寬度 */\n    box-sizing: border-box;\n    padding: 0;\n    margin: 0;\n}\n\n.lable-container {\n    display: flex;\n    justify-content: space-between;\n    box-sizing: border-box;\n    width: 100%;\n    height: 5px;\n}\n\n.section-label {\n    display: flex;\n    flex: 1;\n    align-items: flex-end;\n    outline: none;\n    text-align: left;\n    padding-top: 10px;\n    margin-left: -40px;\n    position: relative;\n    transform: translateY(50%);\n    color: rgba(0, 0, 0, 0.95);\n    font-family: \"Verdana\";\n    font-weight: 600;\n    font-style: italic;\n    text-shadow: 2px 1px 2px #f19dae, -1px -2px 2px #f19dae, 1px -1px 2px #f19dae, -1px 2px 2px #f19dae;\n}\n\n.section-label-largest-text {\n    font-size: 1.45em;\n    margin-left: 5px;\n}\n\n.section-label-smallest-text {\n    font-size: 1.13em;\n}\n\n.chord-container {\n    display: flex;\n    width: 100%;\n    box-sizing: border-box;\n    flex-wrap: nowrap;\n    min-height: 38px;\n    /* 最小高度 */\n    max-height: 45px;\n    /* 最大高度 */\n    height: 45px;\n    padding: 0;\n    margin: 0;\n}\n\n/* Chord */\n.chord-container>.chord {\n    line-height: 1;\n    padding-bottom: 5px;\n    display: flex;\n    align-items: flex-end;\n    font-size: clamp(1.4em, 1.6em, 1.6em);\n    flex: 1;\n\n    min-width: 0;\n    border: none;\n    outline: none;\n    box-sizing: border-box;\n    /* 超出左邊界一點 */\n    margin-left: -10px;\n    white-space: nowrap;\n    overflow: hidden;\n    text-overflow: ellipsis;\n}\n\n/* Chord Word */\n.chord-largest-text {\n    font-size: 1.45em;\n    /* 1.5 倍於 .chord 的字體大小 */\n}\n\n/* romanNumera */\n.chord-largest-text-number {\n    font-size: 1.45em;\n    font-family: 'Times New Roman', serif;\n    /* 1.5 倍於 .chord 的字體大小 */\n}\n\n.chord-larger-text-top {\n    font-size: 1em;\n    /* 縮小升降記號 */\n    line-height: 1;\n    /* 行高設置為 1，避免偏移 */\n    vertical-align: top;\n    /* 對齊到容器頂部 */\n    display: inline-block;\n    /* 明確設置 inline-block 以便對齊 */\n    position: relative;\n    top: -0.2em;\n    /* 根據實際效果微調 */\n}\n\n\n.chord-larger-text {\n    font-size: 1em;\n    /* 1.2 倍於 .chord 的字體大小 */\n}\n\n\n.chord-smallest-text {\n    font-size: 0.8em;\n    /* 0.9 倍於 .chord 的字體大小 */\n}\n\n/* Line Setting */\n.line-container {\n    display: flex;\n    justify-content: space-between;\n    width: 100%;\n    box-sizing: border-box;\n    margin-bottom: 10px;\n    height: 50px;\n    min-height: 40px;\n    max-height: 50px;\n}\n\n.vertical-line {\n    min-width: 0;\n    width: 2px;\n    height: 100%;\n    background-color: rgb(29, 29, 29);\n}\n\n/* Page Number */\n.page-navigation {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    margin-top: 10px;\n    gap: 4px;\n}\n\n.prev-button,\n.next-button {\n    background-color: transparent;\n    /* 背景設置為透明 */\n    /* 文字顏色設置為藍色（可以根據需要更改） */\n    border: 2px solid transparent;\n    /* 邊框設置為透明 */\n    border-radius: 5px;\n    cursor: pointer;\n    transition: all 0.3s ease;\n    font-weight: bold;\n    /* 可以設置字體加粗讓按鈕更顯眼 */\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -7833,7 +7856,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.app-footer {
     align-items: center;
     justify-content: center;
     /* 元素水平居中排列 */
-    gap: 30px;
+    gap: 20px;
     height: 100%;
 }
 
@@ -7921,7 +7944,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.app-footer {
 
 #volumeController .noUi-connect {
     background: #80bc8d;
-}`, "",{"version":3,"sources":["webpack://./src/styles/footer.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,YAAY;IACZ,+BAA+B;IAC/B,aAAa;AACjB;;AAEA,6BAA6B;AAC7B;IACI,aAAa;IACb,oCAAoC;IACpC,UAAU;IACV,YAAY;IACZ,kBAAkB;;IAElB,2CAA2C;IAC3C,kBAAkB;IAClB,sCAAsC;IACtC,yCAAyC;;AAE7C;;AAEA,WAAW;AACX;IACI,aAAa;IACb,SAAS;IACT,mBAAmB;IACnB,SAAS;IACT,uBAAuB;IACvB,SAAS;IACT,QAAQ;IACR,YAAY;AAChB;;;;AAIA;IACI,aAAa;IACb,mBAAmB;IACnB,uBAAuB;IACvB,aAAa;IACb,SAAS;IACT,YAAY;AAChB;;;AAGA,YAAY;AACZ;IACI,sBAAsB;IACtB,SAAS;IACT,uBAAuB;IACvB,SAAS;IACT,mBAAmB;IACnB,gBAAgB;IAChB,aAAa;AACjB;;AAEA;IACI,aAAa;IACb,8BAA8B;IAC9B,qBAAqB;IACrB,WAAW;IACX,wDAAwD;IACxD,eAAe;IACf,cAAc;AAClB;;AAEA;IACI,eAAe;AACnB;;AAEA,mBAAmB;AACnB;IACI,kBAAkB;AACtB;;AAEA,WAAW;AACX;IACI,aAAa;AACjB;;AAEA,gBAAgB;AAChB;IACI,mBAAmB;AACvB;;AAEA;IACI,mBAAmB;IACnB,WAAW;IACX,mBAAmB;AACvB;;AAEA;IACI,WAAW;AACf;;;AAGA;IACI,cAAc;IACd,cAAc;IACd,YAAY;IACZ,WAAW;IACX,cAAc;AAClB;;AAEA,cAAc;;AAEd;IACI,WAAW;AACf;;AAEA;IACI,kBAAkB;IAClB,gCAAgC;IAChC,YAAY;IACZ,WAAW;IACX,YAAY;AAChB;;AAEA;;IAEI,WAAW;IACX,SAAS;IACT,aAAa;IACb,UAAU;AACd;;AAEA;IACI,mBAAmB;AACvB","sourcesContent":[".app-footer {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    /* 垂直置中子元素 */\n    /* background-color: #f8f9fa; */\n    /* 可選，設定背景色 */\n}\n\n/* 父容器的 Grid 佈局，使用 2:6:2 比例 */\n.player-container {\n    display: grid;\n    grid-template-columns: 3fr 5.5fr 3fr;\n    width: 90%;\n    height: 100%;\n    /* 左中右 2:6:2 的比例 */\n\n    background-color: rgba(255, 255, 255, 0.85);\n    border-radius: 5px;\n    border: 2.5px solid rgba(0, 0, 0, 0.9);\n    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);\n\n}\n\n/* 左側按鈕容器 */\n.left-buttons-container {\n    display: flex;\n    /* 水平排列 */\n    align-items: center;\n    /* 垂直置中 */\n    justify-content: center;\n    /* 靠左對齊 */\n    gap: 5px;\n    /* 按鈕之間的間距 */\n}\n\n\n\n.right-buttons-container {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    /* 元素水平居中排列 */\n    gap: 30px;\n    height: 100%;\n}\n\n\n/* 中間進度條容器 */\n.progress-wrapper {\n    flex-direction: column;\n    /* 垂直排列 */\n    justify-content: center;\n    /* 垂直置中 */\n    align-items: center;\n    margin-top: 10px;\n    /* 容器本身向下內縮 */\n}\n\n.progress-LabelsRow {\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-end;\n    width: 100%;\n    font-family: 'San Francisco', Tahoma, Geneva, sans-serif;\n    font-size: 16px;\n    color: #000000;\n}\n\n#trackNameLabel {\n    font-size: 18px;\n}\n\n/* noUiSlider 進度條 */\n.progress-bar {\n    position: relative;\n}\n\n/* 隱藏拖曳物件 */\n#progressBar .noUi-handle {\n    display: none;\n}\n\n/* 播放過的部分設置為灰色 */\n#progressBar .noUi-connect {\n    background: #cccccc;\n}\n\n#progressBar .noUi-target {\n    background: #e0e0e0;\n    height: 8px;\n    border-radius: 10px;\n}\n\n#progressBar .noUi-pips {\n    color: #999;\n}\n\n\n.volume-controller {\n    grid-column: 3;\n    /* 放在右邊的網格區域 */\n    width: 100px;\n    height: 80%;\n    margin: 10px 0;\n}\n\n/* 拖曳物件的樣式設計 */\n\n#volumeController .noUi-origin {\n    z-index: 10;\n}\n\n#volumeController .noUi-handle {\n    position: absolute;\n    transform: translate(-23%, -50%);\n    /* 水平與垂直置中 */\n    width: 20px;\n    height: 12px;\n}\n\n#volumeController .noUi-handle::before,\n#volumeController .noUi-handle::after {\n    content: \"\";\n    /* 清空内容 */\n    display: none;\n    /* 隐藏伪元素 */\n}\n\n#volumeController .noUi-connect {\n    background: #80bc8d;\n}"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/styles/footer.css"],"names":[],"mappings":"AAAA;IACI,aAAa;IACb,uBAAuB;IACvB,mBAAmB;IACnB,YAAY;IACZ,+BAA+B;IAC/B,aAAa;AACjB;;AAEA,6BAA6B;AAC7B;IACI,aAAa;IACb,oCAAoC;IACpC,UAAU;IACV,YAAY;IACZ,kBAAkB;;IAElB,2CAA2C;IAC3C,kBAAkB;IAClB,sCAAsC;IACtC,yCAAyC;;AAE7C;;AAEA,WAAW;AACX;IACI,aAAa;IACb,SAAS;IACT,mBAAmB;IACnB,SAAS;IACT,uBAAuB;IACvB,SAAS;IACT,QAAQ;IACR,YAAY;AAChB;;;;AAIA;IACI,aAAa;IACb,mBAAmB;IACnB,uBAAuB;IACvB,aAAa;IACb,SAAS;IACT,YAAY;AAChB;;;AAGA,YAAY;AACZ;IACI,sBAAsB;IACtB,SAAS;IACT,uBAAuB;IACvB,SAAS;IACT,mBAAmB;IACnB,gBAAgB;IAChB,aAAa;AACjB;;AAEA;IACI,aAAa;IACb,8BAA8B;IAC9B,qBAAqB;IACrB,WAAW;IACX,wDAAwD;IACxD,eAAe;IACf,cAAc;AAClB;;AAEA;IACI,eAAe;AACnB;;AAEA,mBAAmB;AACnB;IACI,kBAAkB;AACtB;;AAEA,WAAW;AACX;IACI,aAAa;AACjB;;AAEA,gBAAgB;AAChB;IACI,mBAAmB;AACvB;;AAEA;IACI,mBAAmB;IACnB,WAAW;IACX,mBAAmB;AACvB;;AAEA;IACI,WAAW;AACf;;;AAGA;IACI,cAAc;IACd,cAAc;IACd,YAAY;IACZ,WAAW;IACX,cAAc;AAClB;;AAEA,cAAc;;AAEd;IACI,WAAW;AACf;;AAEA;IACI,kBAAkB;IAClB,gCAAgC;IAChC,YAAY;IACZ,WAAW;IACX,YAAY;AAChB;;AAEA;;IAEI,WAAW;IACX,SAAS;IACT,aAAa;IACb,UAAU;AACd;;AAEA;IACI,mBAAmB;AACvB","sourcesContent":[".app-footer {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    /* 垂直置中子元素 */\n    /* background-color: #f8f9fa; */\n    /* 可選，設定背景色 */\n}\n\n/* 父容器的 Grid 佈局，使用 2:6:2 比例 */\n.player-container {\n    display: grid;\n    grid-template-columns: 3fr 5.5fr 3fr;\n    width: 90%;\n    height: 100%;\n    /* 左中右 2:6:2 的比例 */\n\n    background-color: rgba(255, 255, 255, 0.85);\n    border-radius: 5px;\n    border: 2.5px solid rgba(0, 0, 0, 0.9);\n    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);\n\n}\n\n/* 左側按鈕容器 */\n.left-buttons-container {\n    display: flex;\n    /* 水平排列 */\n    align-items: center;\n    /* 垂直置中 */\n    justify-content: center;\n    /* 靠左對齊 */\n    gap: 5px;\n    /* 按鈕之間的間距 */\n}\n\n\n\n.right-buttons-container {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n    /* 元素水平居中排列 */\n    gap: 20px;\n    height: 100%;\n}\n\n\n/* 中間進度條容器 */\n.progress-wrapper {\n    flex-direction: column;\n    /* 垂直排列 */\n    justify-content: center;\n    /* 垂直置中 */\n    align-items: center;\n    margin-top: 10px;\n    /* 容器本身向下內縮 */\n}\n\n.progress-LabelsRow {\n    display: flex;\n    justify-content: space-between;\n    align-items: flex-end;\n    width: 100%;\n    font-family: 'San Francisco', Tahoma, Geneva, sans-serif;\n    font-size: 16px;\n    color: #000000;\n}\n\n#trackNameLabel {\n    font-size: 18px;\n}\n\n/* noUiSlider 進度條 */\n.progress-bar {\n    position: relative;\n}\n\n/* 隱藏拖曳物件 */\n#progressBar .noUi-handle {\n    display: none;\n}\n\n/* 播放過的部分設置為灰色 */\n#progressBar .noUi-connect {\n    background: #cccccc;\n}\n\n#progressBar .noUi-target {\n    background: #e0e0e0;\n    height: 8px;\n    border-radius: 10px;\n}\n\n#progressBar .noUi-pips {\n    color: #999;\n}\n\n\n.volume-controller {\n    grid-column: 3;\n    /* 放在右邊的網格區域 */\n    width: 100px;\n    height: 80%;\n    margin: 10px 0;\n}\n\n/* 拖曳物件的樣式設計 */\n\n#volumeController .noUi-origin {\n    z-index: 10;\n}\n\n#volumeController .noUi-handle {\n    position: absolute;\n    transform: translate(-23%, -50%);\n    /* 水平與垂直置中 */\n    width: 20px;\n    height: 12px;\n}\n\n#volumeController .noUi-handle::before,\n#volumeController .noUi-handle::after {\n    content: \"\";\n    /* 清空内容 */\n    display: none;\n    /* 隐藏伪元素 */\n}\n\n#volumeController .noUi-connect {\n    background: #80bc8d;\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -19935,14 +19958,20 @@ exports.formatTextForLable = formatTextForLable;
 // for chord : 3 size 
 function formatTextForChord(element) {
     var _a;
-    const text = ((_a = element.textContent) === null || _a === void 0 ? void 0 : _a.trim()) || "";
-    const romanNumeralRegex = /^(VII|VI|IV|V|III|II|I)(.*)$/;
+    let text = ((_a = element.textContent) === null || _a === void 0 ? void 0 : _a.trim()) || "";
+    text = text.replace(/maj/gi, "∆");
+    text = text.replace(/dim/gi, "o");
+    text = text.replace(/m7b5/gi, "ø7");
+    const romanNumeralRegex = /^([b#]?)(VII|VI|IV|V|III|II|I|[1-7])(.*)$/;
     const match = text.match(romanNumeralRegex);
     // romanNumer -> Chord 
     if (match) {
-        const [_, romanPart, rest] = match;
-        // Two text size
-        let formattedText = `<span class="chord-largest-text">${romanPart}</span>`;
+        const [_, accidental, romanPart, rest] = match;
+        let formattedText = "";
+        if (accidental) {
+            formattedText += `<span class="chord-larger-text-top">${accidental}</span>`;
+        }
+        formattedText += `<span class="chord-largest-text-number">${romanPart}</span>`;
         if (rest && rest.trim().length > 0) {
             formattedText += `<span class="chord-larger-text">${rest}</span>`;
         }
@@ -20038,6 +20067,8 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 const playerProxy_1 = __webpack_require__(4493);
 const PlayerStrategyManager2_1 = __webpack_require__(3535);
 const nouislider_1 = __importDefault(__webpack_require__(9476));
+const updateMassages_1 = __webpack_require__(7244); // TypeScript 會自動解析 .ts 檔案
+const columnArticle_1 = __webpack_require__(8057); // TypeScript 會自動解析 .ts 檔案
 class PlayerController {
     constructor(container) {
         this.container = container;
@@ -20072,6 +20103,7 @@ class PlayerController {
         const rightButtonsContainer = document.createElement('div');
         rightButtonsContainer.className = 'right-buttons-container';
         rightButtonsContainer.appendChild(this.createVolumeControl());
+        rightButtonsContainer.appendChild(this.createArticleButton());
         rightButtonsContainer.appendChild(this.createGuildlineButton());
         this.playerContainer.appendChild(rightButtonsContainer);
         console.log('Right Buttons Container created and appended:', rightButtonsContainer);
@@ -20252,14 +20284,6 @@ class PlayerController {
             orientation: 'vertical',
             direction: 'rtl',
             connect: [true, false],
-            // pips: {
-            //     mode: 'values' as any,
-            //     values: [0, 50, 100],
-            //     density: 4,
-            //     format: {
-            //         to: (value) => (value === 0 ? 'Start' : value === 100 ? 'End' : `${value}%`),
-            //     },
-            // },
         });
         // listener
         const sliderInstance = volumeControl.noUiSlider;
@@ -20282,7 +20306,7 @@ class PlayerController {
         // 創建按鈕
         const guildlineButton = document.createElement('sl-icon-button');
         guildlineButton.id = 'guildlineButton';
-        guildlineButton.className = 'mode-toggle-btn right-button';
+        guildlineButton.className = 'guildline-btn right-button';
         guildlineButton.setAttribute('name', 'question-square');
         guildlineButton.style.fontSize = '2rem';
         // 創建模態框
@@ -20309,7 +20333,7 @@ class PlayerController {
         modalContent.style.borderRadius = '8px';
         modalContent.style.textAlign = 'center';
         modalContent.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
-        modalContent.style.width = '400px';
+        modalContent.style.width = '500px';
         // 添加關閉按鈕
         const closeButton = document.createElement('span');
         closeButton.textContent = '×';
@@ -20322,9 +20346,9 @@ class PlayerController {
         modalContent.appendChild(closeButton);
         // 添加文字
         const message = document.createElement('p');
-        message.innerHTML = 'Chord-Snap 1.0<br><br>下次預計更新防呆機制+使用說明書，網頁設計再看看有沒有靈感 <br><br>1. Spotify Player 功能需要 Premium 用戶，認證的部分都是走 Spotify 官方驗證流程。<br><br>Spotify 登入流程：點擊上方選單 Spotify Login 會彈出官方登入視窗，輸入完後把彈出視窗關閉。<br>回到下方播放框點選切換模式（可以多切幾次），再點選上傳按鈕就可以了。<br><br>2.本網站由知名平台Github託管且不會儲存任何資訊在官方後台(因為我沒有架設...)安心使用，但沒有防範惡意竊取機制！<br><br>3.遇到小Bug就先儲存資料再重新整理試試。比較有問題的可能是登入Spotify部分，可以試試多登入幾次，試不出來寄信給我。<br><br>4.有改善想法和問題、變成固定使用請寄信給我加入名單，資料儲存方式有變更(防止之後無法讀取)我會告知：komawang.77@gmail.com';
-        message.style.textAlign = 'left';
+        message.innerHTML = updateMassages_1.updateMessages.modalMessage;
         modalContent.appendChild(message);
+        message.style.textAlign = 'left';
         // 將內容添加到模態框
         modal.appendChild(modalContent);
         document.body.appendChild(modal); // 將模態框插入到 body
@@ -20340,8 +20364,112 @@ class PlayerController {
         });
         return guildlineButton;
     }
+    createArticleButton() {
+        // 創建按鈕
+        const articleButton = document.createElement('sl-icon-button');
+        articleButton.id = 'articleButton';
+        articleButton.className = 'article-btn right-button';
+        articleButton.setAttribute('name', 'layout-text-sidebar-reverse');
+        articleButton.style.fontSize = '2rem';
+        // 創建模態框
+        const modal = document.createElement('div');
+        modal.id = 'comingSoonModal';
+        modal.style.position = 'fixed';
+        modal.style.top = '0';
+        modal.style.left = '0';
+        modal.style.width = '100%';
+        modal.style.height = '100%';
+        modal.style.display = 'flex';
+        modal.style.justifyContent = 'center';
+        modal.style.alignItems = 'center';
+        modal.style.backgroundColor = 'rgba(0, 0, 0, 0.6)';
+        modal.style.zIndex = '1000';
+        modal.style.visibility = 'hidden';
+        modal.style.opacity = '0';
+        modal.style.transition = 'visibility 0.3s, opacity 0.3s';
+        // 創建模態框內容
+        const modalContent = document.createElement('div');
+        modalContent.style.position = 'relative';
+        modalContent.style.backgroundColor = 'white';
+        modalContent.style.padding = '20px';
+        modalContent.style.borderRadius = '8px';
+        modalContent.style.textAlign = 'center';
+        modalContent.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+        modalContent.style.width = '500px';
+        // 添加關閉按鈕
+        const closeButton = document.createElement('span');
+        closeButton.textContent = '×';
+        closeButton.style.position = 'absolute';
+        closeButton.style.top = '10px';
+        closeButton.style.right = '10px';
+        closeButton.style.fontSize = '20px';
+        closeButton.style.fontWeight = 'bold';
+        closeButton.style.cursor = 'pointer';
+        modalContent.appendChild(closeButton);
+        // 添加文字
+        const message = document.createElement('p');
+        message.innerHTML = columnArticle_1.columnArticle.modalMessage;
+        modalContent.appendChild(message);
+        // message.style.textAlign = 'left';
+        modal.appendChild(modalContent);
+        document.body.appendChild(modal);
+        articleButton.addEventListener('click', () => {
+            modal.style.visibility = 'visible';
+            modal.style.opacity = '1';
+        });
+        closeButton.addEventListener('click', () => {
+            modal.style.visibility = 'hidden';
+            modal.style.opacity = '0';
+        });
+        return articleButton;
+    }
 }
 exports["default"] = PlayerController;
+
+
+/***/ }),
+
+/***/ 8057:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.columnArticle = void 0;
+exports.columnArticle = {
+    modalMessage: `專欄計畫籌備中，歡迎投稿！
+
+    `,
+};
+
+
+/***/ }),
+
+/***/ 7244:
+/***/ ((__unused_webpack_module, exports) => {
+
+"use strict";
+
+Object.defineProperty(exports, "__esModule", ({ value: true }));
+exports.updateMessages = void 0;
+exports.updateMessages = {
+    modalMessage: `
+        歡迎使用 ChordSnap！<br><br> 
+
+        我是網站負責人 Koma，本網站由知名平台Github託管且不會儲存任何資訊在官方後台請安心使用。<br><br>
+
+        1.Spotify播放功能官方目前只開放給我少量名額，正積極爭取中，有興趣的可以提供Spotify Premium帳號先幫你加入List。<br><br>
+
+        2.遇到小Bug就先儲存資料再重新整理試試，也麻煩通知我讓我修正。常使用的人也麻煩通知我，資料儲存方式有變更才能即時通知保存您的資料，謝謝您。<br><br>
+        
+        ＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿＿<br>
+        ＠推薦專欄：若 Spotify 審核通過，將開放專欄徵稿，歡迎創作者、音樂教師或愛好者投稿，分享自己的編曲手法、和弦運用或樂曲評論等內容。有興趣者歡迎聯繫！<br><br>
+
+        <br>2024.11.28<br>
+        komawang.77@gmail.com</a>
+
+    `,
+};
 
 
 /***/ }),
@@ -20444,7 +20572,6 @@ Object.defineProperty(exports, "__esModule", ({ value: true }));
 const DownloadUpload_1 = __webpack_require__(7054);
 const SpotifyAuthManager_1 = __webpack_require__(1222);
 const PDFExporter_1 = __webpack_require__(7112);
-// import { exportEntireContentToPDF } from './converPDF';
 const spotifyAPI = new SpotifyAuthManager_1.SpotifyAPI();
 class NavbarController {
     constructor(navbarElement) {
@@ -20613,8 +20740,13 @@ class PDFExporter {
     }
     export() {
         return __awaiter(this, void 0, void 0, function* () {
+            // init()
             this.capturedPages = [];
-            console.log('Cleared previous captured pages.');
+            this.pdf = new jspdf_1.default({
+                orientation: 'portrait',
+                unit: 'mm',
+                format: 'a4',
+            });
             const fileName = PDFExporter.generateFileName();
             if (!fileName) {
                 console.log('Cancelled by user.');
@@ -20802,29 +20934,6 @@ class MainPlayer {
             }, 300); // 与动画持续时间一致
         }, 500);
     }
-    /**
-     * 更新曲目和信息
-     */
-    // async update(): Promise<void> {
-    //     try {
-    //         const isUpdated = await this.currentStrategy.uploadNewTrack();
-    //         if (isUpdated) {
-    //             console.log("Track updated successfully.");
-    //             const isReady = await this.currentStrategy.isReadyToPlay();
-    //             if (isReady) {
-    //                 const duration = await this.currentStrategy.getDuration();
-    //                 this.proxy.setState("duration", duration);
-    //                 console.log("main player update duration ")
-    //             } else {
-    //                 console.error("Track is not ready to play.");
-    //             }
-    //         } else {
-    //             console.error("Failed to update track.");
-    //         }
-    //     } catch (error) {
-    //         console.error("An error occurred while updating the track:", error);
-    //     }
-    // }
     update() {
         return __awaiter(this, void 0, void 0, function* () {
             try {
